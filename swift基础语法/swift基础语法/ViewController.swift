@@ -15,17 +15,13 @@ class ViewController: UIViewController {
       
 
         
-        if let fistNum = Int("4"),secondNumber = Int("42") where fistNum < secondNumber{ //where后边是判断的条件
-            
-        print("\(fistNum) < \(secondNumber)")
-        
-        }
-        
-        
-        
     }
 
 }
+//断言的最基本的格式定义
+//let age = -3
+//assert(age <= 0, "这是一个断言")
+
 //where的简单用法
 //if let fistNum = Int("4"),secondNumber = Int("42") where fistNum < secondNumber{ //where后边是判断的条件
 //    
