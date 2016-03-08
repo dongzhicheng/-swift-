@@ -14,13 +14,21 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-     
+    
 
-
+        
         
     }
 
 }
+
+
+//let num1 = 40
+//let num2 = true
+//let rowHeight = num1 + (num2 ? 70 : 40) //三目运算符
+//print("\(rowHeight)")
+
+
 //一元正号运算符
 //let min = -6
 //let minback = +min
