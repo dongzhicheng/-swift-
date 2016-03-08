@@ -14,14 +14,43 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-    
 
         
         
     }
 
 }
+//var welcome = "hello"
+//
+//welcome.insert("!", atIndex: welcome.endIndex) //在字符串的末尾添加字符
+//
+//print("\(welcome)")
 
+
+//        let greeting = "Guten Tag"
+//
+//        for index in greeting.characters.indices {
+//
+//            print("\(greeting[index])")
+
+
+//        let str1 = "hello"
+//        let str2 = "there"
+//        var welcome = str1 + str2 // 拼接字符串
+//        print("\(welcome)")
+//
+
+
+
+//        for index in 1...5{ // 注意后边是三个点
+//
+//        print("(index) * 5 = \(index * 5)")
+//
+
+//let defautColor = "red"
+//var userDefinColor : String?
+//var colorNmae = userDefinColor ?? defautColor // 理解像三目 ?? 前边的必须是可选项
+//print("\(colorNmae)")
 
 //let num1 = 40
 //let num2 = true
