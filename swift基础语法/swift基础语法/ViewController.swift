@@ -11,13 +11,21 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-      
+        
+     
+
 
         
     }
 
 }
+//一元正号运算符
+//let min = -6
+//let minback = +min
+//print("\(minback)")
+
 //断言的最基本的格式定义
 //let age = -3
 //assert(age <= 0, "这是一个断言")
