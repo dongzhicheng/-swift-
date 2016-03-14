@@ -4,10 +4,9 @@ import SnapKit
 /*
     swift中单利的书写方式   static let sharedInstance = TheOneAndOnlyKraken()
 
-
 */
 
-class SinaRefreshControl: UIRefreshControl {
+class RefreshControl: UIRefreshControl {
 
     override init() {
         
@@ -43,8 +42,10 @@ class SinaRefreshControl: UIRefreshControl {
 
     
     // 下拉
-    var isTurn: Bool = false
-    // 这个标记是用于 loading加载的
+    var isTurn: Bool = false //标志
+    
+    // 是用于 loading加载的
+    
     var isLoading: Bool = false
 
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
@@ -78,13 +79,12 @@ class SinaRefreshControl: UIRefreshControl {
 
         super.endRefreshing()
         
-        // 第一件事,把转动的动画移除
-        refreshView.removeAnimation()
-        // 第二件事,让下拉刷新视图 显示
-        refreshView.pullView.hidden = false
-        // 第三件事,恢复开关状态
-        isLoading = false
+       
+        refreshView.removeAnimation() //把转动的动画移除
         
+        refreshView.pullView.hidden = false //让下拉刷新视图 显示
+        
+        isLoading = false //恢复开关状态
     }
     
     deinit{
@@ -93,5 +93,5 @@ class SinaRefreshControl: UIRefreshControl {
         
     }
 
-    lazy var refreshView: SinaRefreshView = NSBundle.mainBundle().loadNibNamed("SinaRefreshView", owner: nil, options: nil).last as! SinaRefreshView
+    lazy var refreshView: RefreshView = NSBundle.mainBundle().loadNibNamed("RefreshView", owner: nil, options: nil).last as! RefreshView
 }

@@ -1,7 +1,7 @@
 
 import UIKit
 
-class SinaRefreshView: UIView {
+class RefreshView: UIView {
     
     @IBOutlet weak var pullView: UIView!
 

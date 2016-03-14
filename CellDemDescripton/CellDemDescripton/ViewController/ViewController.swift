@@ -5,14 +5,10 @@ class ViewController: baseUITableViewController,heardImageDelegateProtocol{
     
  
     @IBOutlet var baseTabelView: UITableView!
-
-    
-//    var refreshController = UIRefreshControl() //处理刷新
     
     func imageCellClick() {
         
         self.navigationController?.pushViewController(secondTabelViewController(), animated: true) //实现代理方法  然后去切换控制器到 secondTabelViewController
-        
     }
 
     var numZu : [CellModel] = [] //初始化一个数组
@@ -20,19 +16,23 @@ class ViewController: baseUITableViewController,heardImageDelegateProtocol{
         super.viewDidLoad()
         
         setupRefresh()//开始刷新数据
-        
         setModelData() //转成模型数据
         
     }
     
     func setupRefresh(){
         
+//MARK自定义的下拉控件
+        refreshControl = RefreshControl()
+        refreshControl!.addTarget(self, action:"startRefreshData", forControlEvents: UIControlEvents.ValueChanged)
         
         
-        self.refreshControl?.addTarget(self, action:"startRefreshData", forControlEvents: UIControlEvents.ValueChanged) // 值改变的时候刷新数据
-        self.refreshControl?.attributedTitle = NSAttributedString(string: "不要急正在拼命刷新")
+//MARK下边这个是系统本身带的刷新功能
         
-        self.refreshControl?.tintColor = UIColor.redColor()
+//        self.refreshControl?.addTarget(self, action:"startRefreshData", forControlEvents: UIControlEvents.ValueChanged) // 值改变的时候刷新数据
+//        self.refreshControl?.attributedTitle = NSAttributedString(string: "不要急正在拼命刷新")
+//        
+//        self.refreshControl?.tintColor = UIColor.redColor()
         
 //        baseTabelView.addSubview(refreshController)
         
@@ -40,14 +40,7 @@ class ViewController: baseUITableViewController,heardImageDelegateProtocol{
     
     func startRefreshData() {//刷新数据的方法
         
-//        refreshController.beginRefreshing() //全部刷新数据
-        
-//        NSThread.sleepForTimeInterval(2) //延时两秒，再执行后边的代码
-        
-//        refreshController.addTarget(self, action:"endRefreshTbaleView", forControlEvents: UIControlEvents.ValueChanged)
-        
         self.performSelector(Selector("endRefreshTbaleView"), withObject: nil, afterDelay: 3)
-        
         
     }
     
