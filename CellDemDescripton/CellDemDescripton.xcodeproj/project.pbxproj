@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751AFC922CAD58E4F07ECA4A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C26F6DB2DC94E4AD512808 /* Pods.framework */; };
+		C8D47E031C969A3400381352 /* RefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D47E001C969A3400381352 /* RefreshControl.swift */; };
+		C8D47E041C969A3400381352 /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D47E011C969A3400381352 /* RefreshView.swift */; };
+		C8D47E051C969A3400381352 /* RefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8D47E021C969A3400381352 /* RefreshView.xib */; };
+		C8D47E071C969ACD00381352 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C8D47E061C969ACD00381352 /* Podfile */; };
 		C8EFECF01C9279C0004228A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFECEF1C9279C0004228A7 /* AppDelegate.swift */; };
 		C8EFECF51C9279C0004228A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EFECF31C9279C0004228A7 /* Main.storyboard */; };
 		C8EFECF71C9279C0004228A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8EFECF61C9279C0004228A7 /* Assets.xcassets */; };
@@ -15,9 +20,19 @@
 		C8EFED091C927CD5004228A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFED081C927CD5004228A7 /* ViewController.swift */; };
 		C8EFED0B1C928510004228A7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFED0A1C928510004228A7 /* TableViewCell.swift */; };
 		C8EFED131C928B7B004228A7 /* secondTabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFED121C928B7B004228A7 /* secondTabelViewController.swift */; };
+		C8EFED161C92A4C7004228A7 /* baseUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFED151C92A4C7004228A7 /* baseUITableViewController.swift */; };
+		C8EFED181C92A511004228A7 /* baseUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFED171C92A511004228A7 /* baseUITabBarController.swift */; };
+		C8EFED1A1C92A805004228A7 /* baseTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFED191C92A805004228A7 /* baseTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06C26F6DB2DC94E4AD512808 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AEF3A1C212A13E32DA212D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B3A895D380891BE2AE6433D0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C8D47E001C969A3400381352 /* RefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshControl.swift; sourceTree = "<group>"; };
+		C8D47E011C969A3400381352 /* RefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
+		C8D47E021C969A3400381352 /* RefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshView.xib; sourceTree = "<group>"; };
+		C8D47E061C969ACD00381352 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		C8EFECEC1C9279C0004228A7 /* CellDemDescripton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellDemDescripton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8EFECEF1C9279C0004228A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8EFECF41C9279C0004228A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,6 +43,9 @@
 		C8EFED081C927CD5004228A7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C8EFED0A1C928510004228A7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C8EFED121C928B7B004228A7 /* secondTabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondTabelViewController.swift; sourceTree = "<group>"; };
+		C8EFED151C92A4C7004228A7 /* baseUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = baseUITableViewController.swift; sourceTree = "<group>"; };
+		C8EFED171C92A511004228A7 /* baseUITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = baseUITabBarController.swift; sourceTree = "<group>"; };
+		C8EFED191C92A805004228A7 /* baseTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = baseTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +53,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751AFC922CAD58E4F07ECA4A /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B7A874755B123B3C6B9EA3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C26F6DB2DC94E4AD512808 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8D47DFF1C969A3400381352 /* RefreshView */ = {
+			isa = PBXGroup;
+			children = (
+				C8D47E001C969A3400381352 /* RefreshControl.swift */,
+				C8D47E011C969A3400381352 /* RefreshView.swift */,
+				C8D47E021C969A3400381352 /* RefreshView.xib */,
+			);
+			path = RefreshView;
+			sourceTree = "<group>";
+		};
 		C8EFECE31C9279C0004228A7 = {
 			isa = PBXGroup;
 			children = (
 				C8EFECEE1C9279C0004228A7 /* CellDemDescripton */,
 				C8EFECED1C9279C0004228A7 /* Products */,
+				C8D47E061C969ACD00381352 /* Podfile */,
+				D7CE6612D64F670C99BBB150 /* Pods */,
+				0B7A874755B123B3C6B9EA3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +100,8 @@
 		C8EFECEE1C9279C0004228A7 /* CellDemDescripton */ = {
 			isa = PBXGroup;
 			children = (
+				C8D47DFF1C969A3400381352 /* RefreshView */,
+				C8EFED141C92A46B004228A7 /* Common */,
 				C8EFED071C927A73004228A7 /* ViewController */,
 				C8EFED041C927A6B004228A7 /* View */,
 				C8EFED011C927A60004228A7 /* Model */,
@@ -97,6 +139,25 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		C8EFED141C92A46B004228A7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C8EFED151C92A4C7004228A7 /* baseUITableViewController.swift */,
+				C8EFED171C92A511004228A7 /* baseUITabBarController.swift */,
+				C8EFED191C92A805004228A7 /* baseTabBar.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D7CE6612D64F670C99BBB150 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3A895D380891BE2AE6433D0 /* Pods.debug.xcconfig */,
+				55AEF3A1C212A13E32DA212D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8EFECFE1C9279C0004228A7 /* Build configuration list for PBXNativeTarget "CellDemDescripton" */;
 			buildPhases = (
+				9EFFE34708AD792F8803C7AB /* Check Pods Manifest.lock */,
 				C8EFECE81C9279C0004228A7 /* Sources */,
 				C8EFECE91C9279C0004228A7 /* Frameworks */,
 				C8EFECEA1C9279C0004228A7 /* Resources */,
+				3A824EBD048B1CF435020AF1 /* Embed Pods Frameworks */,
+				98D566EAFB5E696C7D43A786 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,7 +220,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D47E071C969ACD00381352 /* Podfile in Resources */,
 				C8EFECFA1C9279C0004228A7 /* LaunchScreen.storyboard in Resources */,
+				C8D47E051C969A3400381352 /* RefreshView.xib in Resources */,
 				C8EFECF71C9279C0004228A7 /* Assets.xcassets in Resources */,
 				C8EFECF51C9279C0004228A7 /* Main.storyboard in Resources */,
 			);
@@ -164,13 +230,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A824EBD048B1CF435020AF1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98D566EAFB5E696C7D43A786 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EFFE34708AD792F8803C7AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8EFECE81C9279C0004228A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8EFED181C92A511004228A7 /* baseUITabBarController.swift in Sources */,
+				C8D47E031C969A3400381352 /* RefreshControl.swift in Sources */,
 				C8EFED131C928B7B004228A7 /* secondTabelViewController.swift in Sources */,
+				C8EFED1A1C92A805004228A7 /* baseTabBar.swift in Sources */,
 				C8EFED0B1C928510004228A7 /* TableViewCell.swift in Sources */,
+				C8D47E041C969A3400381352 /* RefreshView.swift in Sources */,
+				C8EFED161C92A4C7004228A7 /* baseUITableViewController.swift in Sources */,
 				C8EFECF01C9279C0004228A7 /* AppDelegate.swift in Sources */,
 				C8EFED091C927CD5004228A7 /* ViewController.swift in Sources */,
 				C8EFED031C927A60004228A7 /* CellModel.swift in Sources */,
@@ -282,8 +401,10 @@
 		};
 		C8EFECFF1C9279C0004228A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3A895D380891BE2AE6433D0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = CellDemDescripton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dongzhicheng.CellDemDescripton;
@@ -293,8 +414,10 @@
 		};
 		C8EFED001C9279C0004228A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55AEF3A1C212A13E32DA212D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = CellDemDescripton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dongzhicheng.CellDemDescripton;
@@ -321,6 +444,7 @@
 				C8EFED001C9279C0004228A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

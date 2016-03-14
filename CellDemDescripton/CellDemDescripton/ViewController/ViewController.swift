@@ -1,47 +1,60 @@
-//
-//  ViewController.swift
-//  简单的小案例
-//
-//  Created by 董志成 on 16/3/9.
-//  Copyright © 2016年 董志成. All rights reserved.
-//
-
-/*
-代理：
-    1.定义代理协议(cellDelet)，设置代理方法，
-    2.声明代理属性  weak var delegate : cellDelet? //代理属性
-    3.如果代理实现了对应的方法自动去调用
-
-   <1>遵循对应的协议
-   <2>设置代理
-   <3>实现对应的代理方法
-
-*/
-
 
 import UIKit
 
-class ViewController: UITableViewController,heardImageDelegateProtocol{
+class ViewController: baseUITableViewController,heardImageDelegateProtocol{
+    
+ 
+    @IBOutlet var baseTabelView: UITableView!
+
+    
+//    var refreshController = UIRefreshControl() //处理刷新
     
     func imageCellClick() {
         
         self.navigationController?.pushViewController(secondTabelViewController(), animated: true) //实现代理方法  然后去切换控制器到 secondTabelViewController
         
     }
-    
-    
+
     var numZu : [CellModel] = [] //初始化一个数组
-     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
-        setModelData()
+        setupRefresh()//开始刷新数据
+        
+        setModelData() //转成模型数据
+        
+    }
+    
+    func setupRefresh(){
+        
+        
+        
+        self.refreshControl?.addTarget(self, action:"startRefreshData", forControlEvents: UIControlEvents.ValueChanged) // 值改变的时候刷新数据
+        self.refreshControl?.attributedTitle = NSAttributedString(string: "不要急正在拼命刷新")
+        
+        self.refreshControl?.tintColor = UIColor.redColor()
+        
+//        baseTabelView.addSubview(refreshController)
+        
+    }
+    
+    func startRefreshData() {//刷新数据的方法
+        
+//        refreshController.beginRefreshing() //全部刷新数据
+        
+//        NSThread.sleepForTimeInterval(2) //延时两秒，再执行后边的代码
+        
+//        refreshController.addTarget(self, action:"endRefreshTbaleView", forControlEvents: UIControlEvents.ValueChanged)
+        
+        self.performSelector(Selector("endRefreshTbaleView"), withObject: nil, afterDelay: 3)
         
         
     }
     
-
+    func endRefreshTbaleView() {
+        
+        self.refreshControl?.endRefreshing()
+    }
     
     func setModelData(){
         
